@@ -16,9 +16,9 @@ class QuoteList extends StatefulWidget {
 
 class _QuoteListState extends State<QuoteList> {
   List quotes = [
-    Quote("I am Super Duper Hot ", "Natalia Korpal"),
+    Quote("I am Super Duper Hot ", "Natalia "),
     Quote("I love that", "Ajay GC"),
-    Quote("Dziekuje ", "Natalia Korpal"),
+    Quote("Dziekuje ", "Natalia "),
   ];
 
   @override

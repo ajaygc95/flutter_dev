@@ -16,9 +16,8 @@ class QuoteList extends StatefulWidget {
 
 class _QuoteListState extends State<QuoteList> {
   List quotes = [
-    Quote("I am Super Duper Hot ", "Natalia Korpal"),
+    Quote("I am Super Hot ", "Natalia Korpal"),
     Quote("I love that", "Ajay GC"),
-    Quote("Dziekuje ", "Natalia Korpal"),
   ];
 
   @override
@@ -31,15 +30,7 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.amber,
       ),
       body: Column(
-          children: quotes
-              .map((quote) => QuoteCard(
-                  quote: quote,
-                  delete: () {
-                    setState(() {
-                      quotes.remove(quote);
-                    });
-                  }))
-              .toList()),
+          children: quotes.map((quote) => QuoteCard(quote: quote)).toList()),
     );
   }
 }

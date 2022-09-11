@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'quote.dart';
-import 'quote_card.dart';
 
 void main() => runApp(const MaterialApp(
       home: QuoteList(),
@@ -15,36 +13,17 @@ class QuoteList extends StatefulWidget {
 }
 
 class _QuoteListState extends State<QuoteList> {
-  List quotes = [
-    Quote("I am Super Duper Hot ", "Natalia Korpal"),
-    Quote("I love that", "Ajay GC"),
-    Quote("Dziekuje ", "Natalia Korpal"),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 235, 228, 208),
+      backgroundColor: Colors.amber,
       appBar: AppBar(
-        title: Text('BLITs'),
+        title: Text('BLIT'),
         centerTitle: true,
-        backgroundColor: Colors.amber,
       ),
-      body: Column(
-          children: quotes
-              .map((quote) => QuoteCard(
-                  quote: quote,
-                  delete: () {
-                    setState(() {
-                      quotes.remove(quote);
-                    });
-                  }))
-              .toList()),
     );
   }
 }
-
-
 
 
 

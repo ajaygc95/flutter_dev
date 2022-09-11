@@ -1,52 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'quote.dart';
-import 'quote_card.dart';
 
 void main() => runApp(const MaterialApp(
-      home: QuoteList(),
+      home: Home(),
     ));
 
-class QuoteList extends StatefulWidget {
-  const QuoteList({super.key});
+class QueteList extends StatefulWidget {
+  conss QueteList({super.key});
 
   @override
-  State<QuoteList> createState() => _QuoteListState();
+  Stats QueteList> createState() =>s QueteListState();
 }
 
-class _QuoteListState extends State<QuoteList> {
-  List quotes = [
-    Quote("I am Super Duper Hot ", "Natalia Korpal"),
-    Quote("I love that", "Ajay GC"),
-    Quote("Dziekuje ", "Natalia Korpal"),
-  ];
-
+classs QueteListState extends Stats QueteList> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromARGB(255, 235, 228, 208),
-      appBar: AppBar(
-        title: Text('BLITs'),
-        centerTitle: true,
-        backgroundColor: Colors.amber,
-      ),
-      body: Column(
-          children: quotes
-              .map((quote) => QuoteCard(
-                  quote: quote,
-                  delete: () {
-                    setState(() {
-                      quotes.remove(quote);
-                    });
-                  }))
-              .toList()),
-    );
+    return Container();
   }
 }
-
-
-
-
 
 
 // class Home extends StatefulWidget {
