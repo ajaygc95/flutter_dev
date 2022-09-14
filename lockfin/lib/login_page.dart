@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lockfin/home/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -14,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 224, 224, 200),
+      backgroundColor: Color.fromARGB(255, 235, 235, 230),
       body: SafeArea(
         child: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -46,12 +45,12 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.grey[200],
                     border: Border.all(color: Colors.white10),
                     borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        border: InputBorder.none, hintText: 'Email'),
-                  ),
+                child: TextField(
+                  decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      border: InputBorder.none,
+                      hintText: 'Email'),
                 ),
               ),
             ),
@@ -65,13 +64,13 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.grey[200],
                     border: Border.all(color: Colors.white10),
                     borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        border: InputBorder.none, hintText: 'Password'),
-                  ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      border: InputBorder.none,
+                      hintText: 'Password'),
                 ),
               ),
             ),
@@ -81,22 +80,30 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 10,
             ),
+
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 26.0),
               child: Container(
-                  padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                      color: Colors.deepOrangeAccent,
-                      borderRadius: BorderRadius.circular(12)),
+                    color: Colors.deepOrangeAccent,
+                    // borderRadius: BorderRadius.circular(12)
+                  ),
                   child: Center(
-                      child: Text(
-                    'Sign In',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17),
-                  ))),
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.deepOrangeAccent,
+                            minimumSize: Size.fromHeight(50)),
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
+                        child: Text(
+                          'Sign In',
+                          style: TextStyle(fontSize: 17),
+                        )),
+                  )),
             ),
+
             SizedBox(
               height: 25,
             ),
@@ -112,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.lightBlue, fontWeight: FontWeight.bold),
                 )
               ],
-            )
+            ),
           ]),
         ),
       ),
