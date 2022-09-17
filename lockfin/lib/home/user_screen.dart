@@ -104,16 +104,17 @@ class _UserScreenState extends State<UserScreen> {
                 Text(
                   'About',
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 21,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'RoboMono'),
                 ),
                 Text(
                   '${user.bio}',
                   style: TextStyle(
-                      height: 2,
+                      height: 1.5,
+                      fontSize: 16,
                       fontWeight: FontWeight.normal,
-                      fontFamily: 'RoboMono'),
+                      fontFamily: 'RobotoMono'),
                 ),
                 SizedBox(
                   height: 16,
@@ -137,12 +138,12 @@ class _UserScreenState extends State<UserScreen> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
                               gradient: LinearGradient(colors: [
-                                Color.fromARGB(255, 60, 37, 70),
-                                Color.fromARGB(255, 170, 51, 111)
+                                Color.fromARGB(255, 199, 8, 88),
+                                Color.fromARGB(255, 223, 69, 102)
                               ])),
                           child: Text(
                             interest,
-                            style: TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                         ),
                       )

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lockfin/home/home.dart';
+import 'package:lockfin/screen/onboarding_screens.dart';
 import 'package:lockfin/home/user_screen.dart';
 import 'package:lockfin/login_page.dart';
 
@@ -18,6 +19,8 @@ class RouteGenerator {
           builder: (context) => UserScreen(user: settings.arguments as User),
           settings: settings,
         );
+      case OnBoardingScreen.routeName:
+        return MaterialPageRoute(builder: (context) => OnBoardingScreen());
       default:
         return _errorRoute();
     }
@@ -35,4 +38,3 @@ Route<dynamic> _errorRoute() {
     );
   });
 }
-

@@ -65,6 +65,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+
+  fonts:
+    - family: Optima
+      fonts:
+        - asset: assets/optima.ttf
+    - family: DancingScript
+      fonts:
+        - asset: assets/dancing_script.ttf
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -93,3 +101,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  # - asset: assets/OPTIMA_B.TTF
+
+  # - asset: fonts/Schyler-Italic.ttf
+  # - asset: assets/optima-font.ttf
