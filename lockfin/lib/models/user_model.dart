@@ -37,7 +37,7 @@ class User {
         age: 21,
         name: "Natalia",
         imageUrls: [
-          'https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/306559139_594500722321429_7475772281050738370_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=KF8WjUU2oNsAX8yBLhF&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_MOLXXafn5oPkHFBVMsAFwsQsi31rBLdz5cYPP4Cauqw&oe=6325F5FF',
+          'https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/306559139_594500722321429_7475772281050738370_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=gwbeAM-75IcAX8NdL3j&_nc_ht=scontent-sjc3-1.xx&oh=00_AT-2ORaPwGZiWQ-kX-HA5tDyqB_YXV056UKz_XqfP79qKQ&oe=632DDEFF',
         ],
         jobTitle: "Brownie Land Model",
         bio:

@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       automaticallyImplyLeading: false,
       elevation: 0,
-    title: Row(children: [
+      title: Row(children: [
         Expanded(
           child: Container(
             child: SvgPicture.asset(
@@ -42,7 +42,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                 child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/matchescreen');
+                    },
                     icon: Icon(
                       Icons.send_rounded,
                       color: Colors.blueGrey,

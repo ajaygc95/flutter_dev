@@ -60,36 +60,47 @@ class MatchesScreen extends StatelessWidget {
                 shrinkWrap: true,
                 itemCount: activeMatches.length,
                 itemBuilder: (context, index) {
-                  return Row(children: [
-                    SmallImage(
-                      height: 70,
-                      width: 70,
-                      imageUrl: activeMatches[index].matchedUser.imageUrls[0],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          activeMatches[index].matchedUser.name,
-                          style: Theme.of(context).textTheme.headline4,
+                  return InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/chat',
+                          arguments: activeMatches[index]);
+                    },
+                    child: Row(children: [
+                      SmallImage(
+                        height: 70,
+                        width: 70,
+                        imageUrl: activeMatches[index].matchedUser.imageUrls[0],
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              activeMatches[index].matchedUser.name,
+                              style: Theme.of(context).textTheme.headline4,
+                            ),
+                            Text(
+                              activeMatches[index].chat![0].messages[0].message,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline5!
+                                  .copyWith(fontWeight: FontWeight.normal),
+                            ),
+                            Text(
+                              activeMatches[index]
+                                  .chat![0]
+                                  .messages[0]
+                                  .timeString,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline5!
+                                  .copyWith(fontWeight: FontWeight.normal),
+                            ),
+                          ],
                         ),
-                        Text(
-                          activeMatches[index].chat![0].messages[0].message,
-                          style: Theme.of(context)
-                              .textTheme
-                              .headline5!
-                              .copyWith(fontWeight: FontWeight.normal),
-                        ),
-                        Text(
-                          activeMatches[index].chat![0].messages[0].timeString,
-                          style: Theme.of(context)
-                              .textTheme
-                              .headline5!
-                              .copyWith(fontWeight: FontWeight.normal),
-                        ),
-                      ],
-                    )
-                  ]);
+                      )
+                    ]),
+                  );
                 },
               ),
             ],
