@@ -24,17 +24,6 @@ class User {
     const User(
         id: 1,
         age: 21,
-        name: "Natalia",
-        imageUrls: [
-          'https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/306559139_594500722321429_7475772281050738370_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=KF8WjUU2oNsAX8yBLhF&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_MOLXXafn5oPkHFBVMsAFwsQsi31rBLdz5cYPP4Cauqw&oe=6325F5FF',
-        ],
-        jobTitle: "Brownie Land Model",
-        bio:
-            "Hot, Shy , Has difficulties opening doors, in love with brown guy, when you go brown they never let you down",
-        interests: ["Music", "Not Babysitting", "Doing AJ"]),
-    const User(
-        id: 2,
-        age: 21,
         name: "Habron",
         imageUrls: [
           'https://images.unsplash.com/photo-1663024718100-9250a83a1db5?ixlib=rb-1.2.1&ixid=Mn',
@@ -42,6 +31,17 @@ class User {
         ],
         jobTitle: "Brownie Land Model",
         bio: "Hot, Shy , Has difficulties opening doors",
+        interests: ["Music", "Not Babysitting", "Doing AJ"]),
+    const User(
+        id: 2,
+        age: 21,
+        name: "Natalia",
+        imageUrls: [
+          'https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-1/306559139_594500722321429_7475772281050738370_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=KF8WjUU2oNsAX8yBLhF&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_MOLXXafn5oPkHFBVMsAFwsQsi31rBLdz5cYPP4Cauqw&oe=6325F5FF',
+        ],
+        jobTitle: "Brownie Land Model",
+        bio:
+            "Hot, Shy , Has difficulties opening doors, in love with brown guy, when you go brown they never let you down",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
         id: 3,
@@ -65,7 +65,7 @@ class User {
         bio: "Hot, Shy , Has difficulties opening doors",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 5,
         age: 21,
         name: "Emily",
         imageUrls: [
@@ -77,7 +77,7 @@ class User {
             "Hot, Shy , Has difficulties opening doors, in love with brown guy, when you go brown they never let you down",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 6,
         age: 21,
         name: "Ajlia",
         imageUrls: [
@@ -88,7 +88,7 @@ class User {
         bio: "Hot, Shy , Has difficulties opening doors",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 7,
         age: 21,
         name: "Ajlia",
         imageUrls: [
@@ -99,7 +99,7 @@ class User {
         bio: "Hot, Shy , Has difficulties opening doors",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 8,
         age: 21,
         name: "Ajlia",
         imageUrls: [
@@ -110,7 +110,7 @@ class User {
         bio: "Hot, Shy , Has difficulties opening doors",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 9,
         age: 21,
         name: "Ajlia",
         imageUrls: [
@@ -121,7 +121,7 @@ class User {
         bio: "Hot, Shy , Has difficulties opening doors",
         interests: ["Music", "Not Babysitting", "Doing AJ"]),
     const User(
-        id: 4,
+        id: 10,
         age: 21,
         name: "Ajlia",
         imageUrls: [
