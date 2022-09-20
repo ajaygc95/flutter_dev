@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomTextContainer extends StatelessWidget {
-  final TabController tabController;
   final String text;
-  const CustomTextContainer(
-      {super.key, required this.tabController, required this.text});
+  const CustomTextContainer({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {

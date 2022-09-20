@@ -29,34 +29,23 @@ class BioScreen extends StatelessWidget {
                   tabController: tabController, text: "What Do You Like?"),
               SizedBox(height: 20),
               Row(children: [
-                CustomTextContainer(
-                    tabController: tabController, text: "Music"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Dance"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Sports"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Movies"),
-                CustomTextContainer(tabController: tabController, text: "Art"),
+                CustomTextContainer(text: "Music"),
+                CustomTextContainer(text: "Dance"),
+                CustomTextContainer(text: "Sports"),
+                CustomTextContainer(text: "Movies"),
+                CustomTextContainer(text: "Art"),
               ]),
               Row(children: [
-                CustomTextContainer(
-                    tabController: tabController, text: "COffee"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Tv series"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Friends"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Beaches"),
+                CustomTextContainer(text: "COffee"),
+                CustomTextContainer(text: "Tv series"),
+                CustomTextContainer(text: "Friends"),
+                CustomTextContainer(text: "Beaches"),
               ]),
               Row(children: [
-                CustomTextContainer(
-                    tabController: tabController, text: "Programming"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Clubbing"),
-                CustomTextContainer(
-                    tabController: tabController, text: "Sports"),
-                CustomTextContainer(tabController: tabController, text: "Lazy"),
+                CustomTextContainer(text: "Programming"),
+                CustomTextContainer(text: "Clubbing"),
+                CustomTextContainer(text: "Sports"),
+                CustomTextContainer(text: "Lazy"),
               ]),
             ],
           ),

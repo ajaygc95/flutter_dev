@@ -7,6 +7,7 @@ import 'package:lockfin/models/model.dart';
 import 'package:lockfin/screen/onboarding_screens.dart';
 import 'package:lockfin/home/user_screen.dart';
 import 'package:lockfin/login_page.dart';
+import 'package:lockfin/screen/profile_screen.dart';
 
 import '../models/user_model.dart';
 
@@ -24,6 +25,8 @@ class RouteGenerator {
         );
       case OnBoardingScreen.routeName:
         return MaterialPageRoute(builder: (context) => OnBoardingScreen());
+      case ProfileScreen.routeName:
+        return MaterialPageRoute(builder: (context) => ProfileScreen());
       case MatchesScreen.routeName:
         return MaterialPageRoute(builder: (context) => MatchesScreen());
       case ChatScreen.routeName:
