@@ -20,14 +20,12 @@ class CustomTextContainer extends StatelessWidget {
             ],
           ),
         ),
-        child: Center(
-          child: Text(
-            text,
-            style: Theme.of(context)
-                .textTheme
-                .headline6!
-                .copyWith(color: Colors.white),
-          ),
+        child: Text(
+          text,
+          style: Theme.of(context)
+              .textTheme
+              .headline6!
+              .copyWith(color: Colors.white, height: 1.8),
         ),
       ),
     );

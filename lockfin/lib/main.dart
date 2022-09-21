@@ -6,6 +6,7 @@ import 'package:lockfin/config/theme.dart';
 import 'package:lockfin/home/user_screen.dart';
 import 'package:lockfin/login_page.dart';
 import 'package:lockfin/matches/matches_screen.dart';
+import 'package:lockfin/screen/api_screen.dart';
 import 'package:lockfin/screen/profile_screen.dart';
 import 'screen/onboarding_screens.dart';
 import 'models/model.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: theme(),
         onGenerateRoute: RouteGenerator.generateRoute,
-        initialRoute: ProfileScreen.routeName,
+        initialRoute: ApiScreen.routeName,
       ),
     );
   }

@@ -24,7 +24,7 @@ class ProfileScreen extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height / 4,
+                  height: MediaQuery.of(context).size.height / 3,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
@@ -41,13 +41,13 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height / 4,
+                  height: MediaQuery.of(context).size.height / 3,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     gradient: LinearGradient(
                       colors: [
                         Theme.of(context).primaryColor.withOpacity(0.1),
-                        Theme.of(context).primaryColor.withOpacity(0.9),
+                        Theme.of(context).primaryColor.withOpacity(0.7),
                       ],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
@@ -114,12 +114,16 @@ class ProfileScreen extends StatelessWidget {
                         .copyWith(fontWeight: FontWeight.normal),
                   ),
                   TitleWithIcon(title: 'Interest', icon: Icons.edit),
-                  Row(
+                  Wrap(
+                    direction: Axis.horizontal,
                     children: [
                       CustomTextContainer(text: "Not Babysitting"),
                       CustomTextContainer(text: "Dance "),
                       CustomTextContainer(text: "Doing AJ"),
-                      CustomTextContainer(text: "Celebrity"),
+                      CustomTextContainer(text: "Coffee"),
+                      CustomTextContainer(text: "Celebrity Gossips"),
+                      CustomTextContainer(text: "Movies"),
+                      CustomTextContainer(text: "Soccer"),
                     ],
                   )
                 ],
